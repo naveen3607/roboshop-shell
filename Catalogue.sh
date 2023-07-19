@@ -22,6 +22,6 @@ mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
 #Reload, enable & start the service
 systemctl daemon-reload
 systemctl enable catalogue
-systemctl start catalogue
+systemctl restart catalogue
 
 
