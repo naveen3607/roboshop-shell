@@ -1,4 +1,4 @@
-#Catalogue is a microservice that is responsible for serving the list of items that displays in roboshop application.
+#Catalogue is a microservice that is responsible for serving the list of items that displays in Roboshop application.
 #Create service
 cp catalogue.service /etc/systemd/system/catalogue.service
 #Create mongoDB repo
