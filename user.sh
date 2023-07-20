@@ -18,7 +18,7 @@ npm install
 #Install mongodb
 yum install mongodb-org-shell -y
 #Load schema
-mongo --host MONGODB-SERVER-IPADDRESS </app/schema/user.js
+mongo --host mongodb.naveen3607.online </app/schema/user.js
 #Enable & start the service
 systemctl daemon-reload
 systemctl enable user

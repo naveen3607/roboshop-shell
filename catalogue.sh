@@ -18,7 +18,7 @@ npm install
 #Install mongoDB
 yum install mongodb-org-shell -y
 #Load mongoDB Schema
-mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
+mongo --host mongodb.naveen3607.online </app/schema/catalogue.js
 #Reload, enable & start the service
 systemctl daemon-reload
 systemctl enable catalogue

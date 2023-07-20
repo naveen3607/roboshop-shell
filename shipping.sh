@@ -13,7 +13,7 @@ mvn clean package
 mv target/shipping-1.0.jar shipping.jar
 #Install mysql and load the schema
 yum install mysql -y
-mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pRoboShop@1 < /app/schema/shipping.sql
+mysql -h mysql.naveen3607.online -uroot -pRoboShop@1 < /app/schema/shipping.sql
 #Enable & start the service
 systemctl daemon-reload
 systemctl enable shipping
