@@ -6,6 +6,7 @@ yum module enable redis:remi-6.2 -y
 #Install redis
 yum install redis -y
 #Update listen address from 127.0.0.1 to 0.0.0.0 in /etc/redis.conf
+sed -i 's/127.0.0.1/0.0.0.0/' /etc/redis.conf /etc/redis/redis.conf
 #Enable & start the service
 systemctl enable redis
 systemctl restart redis
