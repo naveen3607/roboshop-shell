@@ -1,3 +1,5 @@
+#Create payment service
+cp payment.service /etc/systemd/system/payment.service
 #Install python
 yum install python36 gcc python3-devel -y
 #Add user, create directory, download payment content, install depedencies
@@ -8,8 +10,6 @@ cd /app || return
 unzip /tmp/payment.zip
 cd /app || return
 pip3.6 install -r requirements.txt
-#Create payment service
-cp payment.service /etc/systemd/system/payment.service
 #Enable & Start the service
 systemctl daemon-reload
 systemctl enable payment
