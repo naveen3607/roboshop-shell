@@ -1,6 +1,6 @@
 log=/tmp/roboshop.log
 #Create payment service
-echo -e "\e[31m>>>>>>>>>>> Creating shipping service <<<<<<<<<<\e[0m" | tee -a ${log}
+echo -e "\e[31m>>>>>>>>>>> Creating payment service <<<<<<<<<<\e[0m" | tee -a ${log}
 cp payment.service /etc/systemd/system/payment.service &>> ${log}
 #Install python
 echo -e "\e[32m>>>>>>>>>>> Installing python <<<<<<<<<<\e[0m" | tee -a ${log}
